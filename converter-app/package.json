@@ -1,0 +1,12 @@
+{
+  "name": "converter-root",
+  "private": true,
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm:server\" \"npm:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
